@@ -13,7 +13,7 @@ app.use(express.static('public'));
 app.use('/feedback', express.static('feedback'));
 
 app.get('/', (req, res) => {
-  const filePath = path.join(__dirname, 'pages', 'feedback.html');
+  const filePath = path.join(__dirname, 'feedback.html');
   res.sendFile(filePath);
 });
 
